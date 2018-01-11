@@ -1,0 +1,88 @@
+.about-sections-container {
+  background-color: $hint-of-red;
+}
+
+.about-select-container {
+  background-color: $blumine;
+  color: $hint-of-red;
+  margin: 25px 0;
+}
+
+#about-select {
+  font-size: 20px;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.about-section {
+  padding: 15px;
+}
+
+.what-we-do {
+  ul {
+    list-style: none;
+    margin-left: 0;
+    img {
+      height: 100px;
+      margin-bottom: 15px;
+      width: auto;
+    }
+  }
+  li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .company {
+    margin-bottom: 25px;
+    .color-block {
+      color: $hint-of-red;
+      margin-bottom: 25px;
+      padding: 15px;
+    }
+    &:nth-of-type(1) {
+      .color-block {
+        background-color: $blumine;
+      }
+    }
+    &:nth-of-type(2) {
+      .color-block {
+        background-color: $coral-red;
+      }
+    }
+    &:nth-of-type(3) {
+      .color-block {
+        background-color: $cerulean-blue;
+      }
+    }
+    .images-container {
+      display: flex;
+      justify-content: space-between;
+      div {
+        width: 40%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.who-we-are {
+  img {
+    margin: 25px auto;
+  }
+  .title, .read-more {
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+  }
+}
+
