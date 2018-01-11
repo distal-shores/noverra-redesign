@@ -1,3 +1,11 @@
+.hero-image {
+  background-image: url('img/lights.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
 .about-sections-container {
   background-color: $hint-of-red;
 }
@@ -132,6 +140,9 @@
 }
 
 @media (min-width: $screen-sm-min) { 
+  .hero-image {
+    height: 400px;
+  }
   .about-select-container {
     display: none;
   }
@@ -152,6 +163,13 @@
         h2 {
           color: $black;
         }
+        &:hover {
+          background-color: darken($hint-of-red, 10%);
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: darken($blumine, 10%);
       }
     }
     h2 {
@@ -171,6 +189,9 @@
   .what-we-do {
     ul {
       display: flex;
+      i {
+        font-size: 130px;
+      }
     }
     li {
       flex: 1;
@@ -178,9 +199,6 @@
         font-size: 22px;
         padding: 0 10px;
       }
-    }
-    i {
-      font-size: 130px;
     }
     .company-title-container {
       min-height: 150px;
@@ -313,7 +331,7 @@
       }
       &:nth-of-type(1){
         left: 10%;
-        top: 25;
+        top: 25px;
         width: 30%;
       }
       &:nth-of-type(2){
@@ -342,6 +360,62 @@
       }
       &:nth-of-type(5){
         background: linear-gradient(405deg, $chicago 0%, $chicago 90%, transparent 90%, transparent 100%);
+      }
+    }
+  }
+}
+@media (min-width: $screen-md-min) { 
+  .hero-image {
+    height: 450px;
+  }
+  .what-we-do {
+    .service {
+      &:nth-of-type(1){
+        margin-bottom: 200px;
+      }
+      &:nth-of-type(2){
+        .images-container {
+          div {
+            &:nth-of-type(1) {
+              img {
+                left: -5px;
+              }
+            }
+            &:nth-of-type(2) {
+              img {
+                width: 35%;
+                left: 70%;
+              }
+            }
+          }
+        }
+      }
+      &:nth-of-type(3){
+        .images-container {
+          div {
+            &:nth-of-type(1) {
+              img {
+                top: 300px;
+                left: -5%;
+              }
+            }
+            &:nth-of-type(2) {
+              img {
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .where-we-started {
+    img {
+      &:nth-of-type(2) {
+        width: 35%;
+      }
+      &:nth-of-type(3) {
+        right: 10%;
       }
     }
   }
