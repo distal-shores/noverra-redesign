@@ -1,5 +1,25 @@
 <header>
   <nav class="navbar navbar-dark bg-dark">
-    <h1>Navbar</h1>
+    <a class="main-nav">Logo</a>
+    <a class="main-nav" href="{{ "about.html | relative_url }}">About Us</a>
+    <div class="main-nav dropdown">
+      <p>Noverra Group</p>
+      <div class="dropdown-content">
+        <a>Noverra Leadership Development</a>
+        <a>Noverra Strategic Support Services</a>
+        <a>Noverra Capital</a>
+      </div>
+    </div>
+    <div class="main-nav dropdown">
+      <p>Our Companies</p>
+      <div class="dropdown-content">
+        <a>Brighter Mechanical</a>
+        <a>Thorpe Design</a>
+      </div>
+    </div>
+    <a class="main-nav">Contact</a>
   </nav>
+  <div>
+    {% include nav-breadcrumbs.html %}
+  </div>
 </header>
