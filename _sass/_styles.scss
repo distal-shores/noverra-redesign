@@ -2,8 +2,11 @@
 // minima styles that are still around
   
 a {
+  color: $cerulean-blue;
   transition: color 0.2s;
   &:hover {
+    color: darken($cerulean-blue, 20%);
+    text-decoration: none;
     transition: color 0.2s;
   }
   &:visited {
@@ -126,6 +129,10 @@ select {
   }
   .content-select-container {
     display: none;
+  }
+  .profile-image {
+    height: 200px;
+    width: 200px;
   }
   .tabs-container {
     display: flex;

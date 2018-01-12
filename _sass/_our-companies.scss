@@ -12,3 +12,31 @@
     background-image: url('https://www.fillmurray.com/g/305/305');
   }
 }
+
+.companies-section {
+  background-color: $heather;
+  padding: 15px;
+}
+
+@media (min-width: $screen-sm-min) { 
+  .companies-info {
+    margin-top: 25px;
+  }
+  #companies-tabs-container {
+    .tab {
+      padding: 25px 0;
+      &.active {
+        background-color: $heather;
+        &:hover {
+          background-color: darken($heather, 10%);
+        }
+      }
+    }
+  }
+  .companies-section {
+    .profile-image {
+      display: block;
+      margin: 15px auto 25px auto;
+    }
+  }
+}
