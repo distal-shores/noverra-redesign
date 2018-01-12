@@ -1,0 +1,14 @@
+.hero-image {
+  &.our-companies {
+    background-image: url('img/lake.jpg');
+  }
+}
+
+.profile-image {
+  &.thorpe-design {
+    background-image: url('https://www.fillmurray.com/g/300/300');
+  }
+  &.brighter-mechanical {
+    background-image: url('https://www.fillmurray.com/g/305/305');
+  }
+}

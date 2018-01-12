@@ -25,10 +25,44 @@ p {
   font-size: 16px;
 }
 
+.content-section {
+  padding-top: 25px;
+  text-align: center;
+  ul {
+    text-align: left;
+  }
+}
+
+.content-select-container {
+  background-color: $blumine;
+  color: $hint-of-red;
+  margin: 25px 0 0 0;
+  position: relative;
+  i {
+    color: $hint-of-red;
+    position: absolute;
+    right: 5px;
+    font-size: 40px;
+    top: calc(50% - 20px);
+  }
+}
+
+.content-select {
+  font-size: 20px;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+}
+
+
 .hero-image {
   padding-left: 0px;
   padding-right: 0px;
   position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
 }
 
 .hero-text {
@@ -37,6 +71,17 @@ p {
   bottom: 10px;
   width: 100%;
   color: white;
+}
+
+.profile-image {
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: inline-block;
+  height: 150px;
+  margin-bottom: 25px;
+  width: 150px;
 }
 
 .read-more {
@@ -60,6 +105,10 @@ select {
   color: $hint-of-red;
 }
 
+.tabs-container {
+  display: none;
+}
+
 @media (min-width: $screen-sm-min) { 
   .section-heading {
     font-size: 24px;
@@ -70,5 +119,43 @@ select {
     font-size: 36px;
     padding-left: 25px;
     text-align: left;
+  }
+  .content-section {
+    text-align: left;
+    padding-top: 50px;
+  }
+  .content-select-container {
+    display: none;
+  }
+  .tabs-container {
+    display: flex;
+    .tab {
+      align-items: center;
+      background-color: $blumine;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      padding: 15px 0;
+      &.active {
+        background-color: $hint-of-red;
+        h2 {
+          color: $black;
+        }
+        &:hover {
+          background-color: darken($hint-of-red, 10%);
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: darken($blumine, 10%);
+      }
+    }
+    h2 {
+      color: $hint-of-red;
+      font-size: 18px;
+      margin-bottom: 0;
+      text-align: center;
+      white-space: nowrap;
+    }
   }
 }
