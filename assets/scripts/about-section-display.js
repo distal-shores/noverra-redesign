@@ -1,8 +1,5 @@
 $(function () {
-
-
   $('#about-select').change(function () {
-    console.log("changed");
     $('.about-section').hide();
     $('#' + $(this).val()).show();
   });
@@ -14,5 +11,11 @@ $(function () {
     $('.about-section').hide();
     $('#' + stripped).show();
   })
+
+  $('.read-more').on('click', function(){
+    var hiddenParagraphs = $(this).siblings('p.hidden');
+    hiddenParagraphs.removeClass('hidden');
+    $(this).addClass('hidden');
+  });
 
 });
