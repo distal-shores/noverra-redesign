@@ -76,6 +76,7 @@ p {
   color: white;
 }
 
+
 .profile-image {
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -83,7 +84,7 @@ p {
   background-size: cover;
   display: inline-block;
   height: 150px;
-  margin-bottom: 25px;
+  margin: 15px 0 25px 0;
   width: 150px;
 }
 
@@ -100,8 +101,20 @@ p {
 .section-heading {
   font-size: 20px;
   font-weight: bold;
-  padding: 25px;
+  padding: 25px 0;
   text-align: center;
+}
+
+.section-description {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.section-description-block {
+  background-color: $blumine;
+  color: $hint-of-red;
+  padding: 15px;
 }
 
 select {
@@ -113,10 +126,6 @@ select {
 }
 
 @media (min-width: $screen-sm-min) { 
-  .section-heading {
-    font-size: 24px;
-    padding: 50px;
-  }
   .hero-text {
     bottom: 25px;
     font-size: 36px;
@@ -134,6 +143,17 @@ select {
     height: 200px;
     width: 200px;
   }
+
+  .section-heading {
+    font-size: 24px;
+    padding: 50px;
+  }
+  .section-description {
+    font-size: 24px;
+    padding: 25px 0;
+    text-align: left;
+  }
+
   .tabs-container {
     display: flex;
     .tab {
