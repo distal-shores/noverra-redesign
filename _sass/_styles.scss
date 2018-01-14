@@ -34,6 +34,9 @@ p {
   ul {
     text-align: left;
   }
+  li {
+    margin-bottom: 15px;
+  }
 }
 
 .content-select-container {
@@ -76,6 +79,23 @@ p {
   color: white;
 }
 
+.list-heading {
+  margin-bottom: 25px;
+}
+
+.photo-row {
+  margin: 25px 0;
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    img {
+      max-width: 80%;
+    }
+  }
+}
+
 .profile-image {
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -114,6 +134,7 @@ p {
   background-color: $blumine;
   color: $hint-of-red;
   padding: 15px;
+  margin: 25px 0;
 }
 
 select {
@@ -143,6 +164,17 @@ select {
     margin: 25px 0;
   }
 
+  .list-heading {
+    margin-bottom: 50px;
+  }
+
+  .photo-row {
+    margin: 50px 0;
+    .img-container {
+      margin-bottom: 0;
+    }
+  }
+
   .profile-image {
     height: 200px;
     width: 200px;
@@ -156,6 +188,9 @@ select {
     font-size: 24px;
     padding: 25px 0;
     text-align: left;
+  }
+  .section-description-block {
+    margin: 50px 0;
   }
 
   .tabs-container {
