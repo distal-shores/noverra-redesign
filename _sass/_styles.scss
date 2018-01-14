@@ -76,7 +76,6 @@ p {
   color: white;
 }
 
-
 .profile-image {
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -139,6 +138,11 @@ select {
   .content-select-container {
     display: none;
   }
+
+  .icon-block-list {
+    margin: 25px 0;
+  }
+
   .profile-image {
     height: 200px;
     width: 200px;
