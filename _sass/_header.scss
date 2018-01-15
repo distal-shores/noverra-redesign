@@ -1,6 +1,10 @@
 header {
-  width: 780px;
   margin: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
 }
 
 .navbar {
@@ -9,36 +13,55 @@ header {
   margin-bottom: 0;
   a {
     color: white;
-    span {
-      display: table-cell;
-      vertical-align: middle;
-      padding: 30px 10px;
-    }
   }
   .main-nav {
+    align-items: center;
     color: white;
-    display: table;
+    flex: 1 1 auto;
+    height: 90px;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    transition: background-color 0.2s linear;
     width: 20%;
+    > a {
+      height: 90px;
+      line-height: 90px;
+      width: 100%;
+    }
     p {
       margin: 0;
     }
     &:nth-child(1) {
       background-color: $cerulean-blue;
+      &:hover {
+        background-color: lighten($cerulean-blue, 5%);
+      }
     }
     &:nth-child(2) {
       background-color: $blumine;
+      &:hover {
+        background-color: lighten($blumine, 5%);
+      }
     }
     &:nth-child(3) {
       background-color: $biscay;
+      &:hover {
+        background-color: lighten($biscay, 5%);
+      }
     }
     &:nth-child(4) {
       background-color: $coral-red;
+      &:hover {
+        background-color: lighten($coral-red, 5%);
+      }
     }
     &:nth-child(5) {
       background-color: $cerulean-blue;
+      &:hover {
+        background-color: lighten($cerulean-blue, 5%);
+      }
     }
   }
   .dropdown {
@@ -53,6 +76,7 @@ header {
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     display: none;
+    left: 0;
     min-width: 300px;
     position: absolute;
     top: 100%;
@@ -82,6 +106,7 @@ header {
     -moz-border-radius: 0;
     border-radius: 0;
     background-color: $breadcrumb-background;
+    display: flex;
     height: 50px;
     padding: 0;
     margin: 0;
@@ -90,39 +115,44 @@ header {
     }
   }
   .breadcrumb-item {
+    align-items: center;
     color: $breadcrumb-font;
+    display: flex;
+    flex: 0 1 33%;
+    justify-content: center;
     position: relative;
     text-transform: uppercase;
+    transition: background-color 0.3s linear;
     a {
-      height: 50px;
-      display: table;
       font-size: 14px;
       text-align: center;
-      width: 200px;
-      span {
-        display: table-cell;
-        vertical-align: middle;
-        padding-left: 25px;
-      }
+      width: 100%;
     }
     &:nth-child(1) {
       background-color: $breadcrumb-1;
       .arrow-right {
         border-left: 20px solid $breadcrumb-1;
       }
+      &:hover {
+        background-color: lighten($breadcrumb-1, 5%);
+      }
     }
     &:nth-child(2) {
       background-color: $breadcrumb-2;
-      margin-left: -4px;
       .arrow-right {
         border-left: 20px solid $breadcrumb-2;
+      }
+      &:hover {
+        background-color: lighten($breadcrumb-2, 5%);
       }
     }
     &:nth-child(3) {
       background-color: $breadcrumb-3;
-      margin-left: -4px;
       .arrow-right {
         border-left: 20px solid $breadcrumb-3;
+      }
+      &:hover {
+        background-color: lighten($breadcrumb-3, 5%);
       }
     }
   }
@@ -137,3 +167,34 @@ header {
     z-index: 2;
   }
 }
+
+@media (max-width: $screen-sm-min) {
+  .main-nav {
+      display: none;
+      &.logo,
+      &.hamburger {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      &.logo {
+        flex-grow: 1;
+        flex-shrink: 0;
+      }
+      &.hamburger {
+        background-color: $coral-red;
+        flex: 0 0 90px;
+      }
+  }
+  
+}
+
+@media (min-width: $screen-sm-min + 1px) {
+  .main-nav {
+      display: flex;
+      &.hamburger {
+        display: none;
+      }
+  }
+}
+

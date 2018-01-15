@@ -3,6 +3,7 @@
   
 a {
   color: $cerulean-blue;
+  text-decoration: none;
   transition: color 0.2s;
   &:hover {
     color: darken($cerulean-blue, 20%);
