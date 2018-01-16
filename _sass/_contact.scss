@@ -1,0 +1,39 @@
+.hero-image {
+  &.contact {
+    background-image: url('img/lake.jpg');
+  }
+}
+
+.contact {
+  .map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-info {
+    margin: 25px 0;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  form {
+    > .field {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      width: 100%;
+      input, textarea {
+        padding: 5px;
+        width: 200px;
+      }
+    }
+    button {
+      background-color: $cerulean-blue;
+      border: 0;
+      color: $hint-of-red;
+      margin-top: 15px;
+      padding: 10px 25px;
+    }
+  }
+}
