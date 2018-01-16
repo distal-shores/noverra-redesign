@@ -10,7 +10,7 @@
       {% endif %}
 
       {% if forloop.last and false %}
-        <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+        <li class="breadcrumb-item" property="itemListElement" typeof="ListItem"{% if crumbitem.getUrlHash != '' %} data-hash="{{ crumbitem.getUrlHash }}"{% endif %}>
           <span property="name">{{ crumbitem.title }}</span>
           <meta property="position" content="{{ position }}" />
           <div class="arrow-right"></div>
@@ -18,8 +18,8 @@
         {% continue %}
       {% endif %}
 
-      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-        <a property="item" typeof="WebPage" href="{{ crumbitem.url | prepend: site.baseurl }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem"{% if crumbitem.getUrlHash != '' %} data-hash="{{ crumbitem.getUrlHash }}"{% endif %}>
+      <a property="item" typeof="WebPage" href="{{ crumbitem.getUrl | prepend: site.baseurl }}#{{ crumbitem.getUrlHash }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
         <div class="arrow-right"></div>
       </li>
     {% endfor %}
