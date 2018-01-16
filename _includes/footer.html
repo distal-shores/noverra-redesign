@@ -1,3 +1,24 @@
 <footer>
-  <h1>Footer</h1>
+    <h1>Footer</h1>
 </footer>
+<script>
+    $(document).ready(function() {
+        var slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'padding': 256,
+            'tolerance': 70,
+            'side': 'right'
+        });
+        document.querySelector('.toggle-button').addEventListener('click', function() {
+            slideout.toggle();
+        });
+
+
+        $('.mobile-sub-toggle').click(function() {
+            $('.overlay').toggle();
+            $(this).siblings().toggleClass("visible").toggleClass("invisible");
+        });
+
+    });
+</script>
