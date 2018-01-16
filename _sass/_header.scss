@@ -127,6 +127,9 @@ header {
       font-size: 14px;
       text-align: center;
       width: 100%;
+      &:visited {
+        color: $breadcrumb-font;
+      }
     }
     &:nth-child(1) {
       background-color: $breadcrumb-1;
@@ -146,14 +149,12 @@ header {
         background-color: lighten($breadcrumb-2, 5%);
       }
     }
-    &:nth-child(3) {
-      background-color: $breadcrumb-3;
-      .arrow-right {
-        border-left: 20px solid $breadcrumb-3;
-      }
-      &:hover {
-        background-color: lighten($breadcrumb-3, 5%);
-      }
+    background-color: $breadcrumb-3;
+    .arrow-right {
+      border-left: 20px solid $breadcrumb-3;
+    }
+    &:hover {
+      background-color: lighten($breadcrumb-3, 5%);
     }
   }
   .arrow-right {
