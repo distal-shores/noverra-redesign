@@ -3,14 +3,13 @@
 {% include head.html %}
 <body>
     {% include mobile-menu.html %}
-    <div class="overlay">
         <div id="panel">
+            <div class="overlay"></div>
             {% include header.html %}
             <main>
                 {{ content }}
             </main>
             {% include footer.html %}
         </div>
-    </div>
 </body>
 </html>

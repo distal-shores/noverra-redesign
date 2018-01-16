@@ -96,7 +96,9 @@ p {
   display: none;
   height: 100%;
   opacity: 0.7;
+  position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .photo-row {

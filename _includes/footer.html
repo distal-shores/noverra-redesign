@@ -11,12 +11,12 @@
             'side': 'right'
         });
         document.querySelector('.toggle-button').addEventListener('click', function() {
+            $('.overlay').toggle();
             slideout.toggle();
         });
 
 
         $('.mobile-sub-toggle').click(function() {
-            $('.overlay').toggle();
             $(this).siblings().toggleClass("visible").toggleClass("invisible");
         });
 
