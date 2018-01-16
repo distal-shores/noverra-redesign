@@ -1,0 +1,49 @@
+.hero-image {
+  &.capital {
+    background-image: url('img/lights.jpg');
+  }
+}
+
+.capital {
+  h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    padding: 0 25px;
+  }
+  i {
+    font-size: 150px;
+    margin-bottom: 20px;
+  }
+  .icon-block,
+  .no-icon-block {
+    margin-bottom: 75px;
+    position: relative;
+    &:after {
+      content: "";
+      background-color: $cerulean-blue;
+      bottom: -55px;
+      height: 30px;
+      left: calc(50% - 2.5px);
+      position: absolute;
+      width: 5px;
+    }
+  }
+  .no-icon-block {
+    padding-top: 15px;
+    &:last-of-type{
+      margin-bottom: 50px;
+      &:after {
+        content: "";
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      }
+    }
+  }
+  .section-heading {
+    margin-bottom: 0;
+  }
+  ul {
+    margin-bottom: 25px;
+  }
+}
