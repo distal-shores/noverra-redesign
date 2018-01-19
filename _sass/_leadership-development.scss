@@ -1,6 +1,6 @@
 .hero-image {
   &.leadership-development {
-    background-image: url('img/lake.jpg');
+    background-image: url('img/hero-images/noverra-group-s.jpg');
   }
 }
 
@@ -47,5 +47,20 @@
   }
   h5 {
     font-size: 18px;
+  }
+}
+
+@media (min-width: $screen-md-min) { 
+  .hero-image {
+    &.leadership-development {
+      background-image: url('img/hero-images/noverra-group-m.jpg');
+    }
+  }
+}
+@media (min-width: $screen-lg-min) {
+  .hero-image {
+    &.leadership-development {
+      background-image: url('img/hero-images/noverra-group-l.jpg');
+    }
   }
 }

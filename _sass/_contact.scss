@@ -1,6 +1,6 @@
 .hero-image {
   &.contact {
-    background-image: url('img/lake.jpg');
+    background-image: url('img/hero-images/contact-s.jpg');
   }
 }
 
@@ -34,6 +34,21 @@
       color: $hint-of-red;
       margin-top: 15px;
       padding: 10px 25px;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) { 
+  .hero-image {
+    &.contact {
+      background-image: url('img/hero-images/contact-m.jpg');
+    }
+  }
+}
+@media (min-width: $screen-lg-min) {
+  .hero-image {
+    &.contact {
+      background-image: url('img/hero-images/contact-l.jpg');
     }
   }
 }

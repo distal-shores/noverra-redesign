@@ -1,15 +1,22 @@
 .hero-image {
   &.our-companies {
-    background-image: url('img/lake.jpg');
+    background-image: url('img/hero-images/our-companies-s.jpg');
   }
 }
 
 .profile-image {
+  &.thorpe-design,
+  &.brighter-mechanical {
+    border-radius: 0;
+    background-size: contain;
+    height: 200px;
+    width: 300px;
+  }
   &.thorpe-design {
-    background-image: url('https://www.fillmurray.com/g/300/300');
+    background-image: url('/assets/img/thorpe.jpg');
   }
   &.brighter-mechanical {
-    background-image: url('https://www.fillmurray.com/g/305/305');
+    background-image: url('/assets/img/brighter_mechanical.jpg');
   }
 }
 
@@ -37,6 +44,22 @@
     .profile-image {
       display: block;
       margin: 15px auto 25px auto;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) { 
+  .hero-image {
+    &.our-companies {
+      background-image: url('img/hero-images/our-companies-m.jpg');
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) { 
+  .hero-image {
+    &.our-companies {
+      background-image: url('img/hero-images/our-companies-l.jpg');
     }
   }
 }
