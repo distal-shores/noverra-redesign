@@ -41,6 +41,12 @@ body {
     flex: 0 1 20%;
     justify-content: center;
     text-transform: uppercase;
+    > a {
+      padding: 50px;
+      &.deployed {
+        padding: 0;
+      }
+    }
     a {
       color: $hint-of-red;
     }
@@ -53,8 +59,22 @@ body {
     &:nth-of-type(4) {
       background-color: $coral-red;
     }
+    .mobile-sub-toggle {
+      margin-bottom: 5px;
+      position: relative;
+      i {
+        position: absolute;
+        transition: transform 0.3s ease-out;
+      }
+      &.deployed {
+        i {
+          transform: rotate(90deg);
+        }
+      }
+    }
   }
   .mobile-sub-menu {
+    width: 100%;
     &.invisible {
       display: none;
       -webkit-animation: fadeOut 1s;
@@ -64,6 +84,11 @@ body {
       display: block;
       -webkit-animation: fadeIn 1s;
       animation: fadeIn 1s;
+    }
+    a {
+      display: block;
+      font-size: 14px; 
+      padding-left: 15px;
     }
   }
   .flex-wrap {
@@ -87,12 +112,6 @@ body {
   will-change: transform;
   background-color: #FFF; /* A background-color is required */
   min-height: 100vh;
-}
-
-.slideout-open,
-.slideout-open body,
-.slideout-open .slideout-panel {
-  overflow: hidden;
 }
 
 .slideout-open .slideout-menu {
