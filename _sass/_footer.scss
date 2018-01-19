@@ -1,0 +1,43 @@
+footer {
+    align-items: center;
+    background-color: $chicago;
+    color: $hint-of-red;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    position: relative;
+    text-align: center;
+    p {
+        padding-top: 25px;
+    }
+    .footer-top {
+        display: flex;
+        width: 100%;
+        span {
+            display: inline-block;
+            flex: 1 1 auto;
+            height: 7px;
+            &.blue {
+                background-color: $cerulean-blue;
+            }
+            &.navy {
+                background-color: $biscay;
+            }            
+            &.red {
+                background-color: $coral-red;
+            }
+            &.heather {
+                background-color: $heather;
+            }
+        }
+    }
+    .site-tag {
+        position: absolute;
+        bottom: 5px;
+        font-size: 11px;
+        right: 5px;
+        a {
+            color: $heather;
+        }
+    }
+}
