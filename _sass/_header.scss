@@ -63,6 +63,12 @@ header {
         background-color: lighten($cerulean-blue, 5%);
       }
     }
+    .toggle-button {
+      padding: 25px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
   .dropdown {
     i {
@@ -122,7 +128,6 @@ header {
     justify-content: center;
     position: relative;
     text-transform: uppercase;
-    transition: background-color 0.3s linear;
     a {
       font-size: 14px;
       text-align: center;
