@@ -129,7 +129,8 @@ header {
     position: relative;
     text-transform: uppercase;
     a {
-      font-size: 14px;
+      font-size: 10px;
+      padding-left: 5px;
       text-align: center;
       width: 100%;
       &:visited {
@@ -154,6 +155,12 @@ header {
         background-color: lighten($breadcrumb-2, 5%);
       }
     }
+    &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+      flex: 0 1 34%;
+      .arrow-right {
+        border: none !important;
+      }
+    }
     background-color: $breadcrumb-3;
     .arrow-right {
       border-left: 20px solid $breadcrumb-3;
@@ -176,31 +183,76 @@ header {
 
 @media (max-width: $screen-sm-min) {
   .main-nav {
-      display: none;
-      &.logo,
-      &.hamburger {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-      }
-      &.logo {
-        flex-grow: 1;
-        flex-shrink: 0;
-      }
-      &.hamburger {
-        background-color: $coral-red;
-        flex: 0 0 90px;
-      }
+    display: none;
+    &.logo,
+    &.hamburger {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    &.logo {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+    &.hamburger {
+      background-color: $coral-red;
+      flex: 0 0 90px;
+    }
   }
-  
+
+  .breadcrumbs {
+    .breadcrumb-item {
+      &:nth-child(1) {
+        flex: 0 1 20%;
+      }
+      &:nth-child(2) {
+        flex: 0 1 40%;
+        a {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 50%;
+        }
+      }
+      &:nth-child(3), 
+      &:nth-child(4), 
+      &:nth-child(5),
+      &:nth-child(6) {
+        flex: 0 1 45%;
+        a {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 50%;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $screen-sm-min + 1px) {
   .main-nav {
-      display: flex;
-      &.hamburger {
-        display: none;
+    display: flex;
+    &.hamburger {
+      display: none;
+    }
+  }
+  .breadcrumbs {
+    .breadcrumb-item {
+      a {
+        font-size: 14px;
+        padding-left: 0px;
       }
+      &:nth-child(1) {
+        flex: 0 1 33%;
+      }
+      &:nth-child(2) {
+        flex: 0 1 33%;
+      }
+      &:nth-child(3), 
+      &:nth-child(4), 
+      &:nth-child(5),
+      &:nth-child(6) {
+        flex: 0 1 35%;
+      }
+    }
   }
 }
-
