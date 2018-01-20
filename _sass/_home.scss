@@ -1,0 +1,56 @@
+.hero-home {
+    align-items: center;
+    background-image: url('img/hero-images/home-s.jpg');
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    h2 {
+        color: white;
+        font-family: Nevis;
+        font-size: 60px;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .black-overlay {
+        align-items: center;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 100px; 
+    }
+    .hero-caption {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+.home-description {
+    background-color: $biscay; 
+    color: $hint-of-red;
+    padding: 100px;
+}
+
+@media (min-width: $screen-md-min) {
+    .hero-home {
+        background-image: url('img/hero-images/home-m.jpg');
+    }
+
+}
+
+@media (min-width: $screen-lg-min) {
+    .hero-home {
+        background-image: url('img/hero-images/home-l.jpg');
+        h2 {
+            text-align: left;
+        }
+        .black-overlay {
+            flex-direction: row;
+        }
+        .hero-caption {
+            text-align: left;
+        }
+    }
+}

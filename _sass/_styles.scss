@@ -1,5 +1,10 @@
 // Use this for global/general styles, and for overriding any bootstrap or 
 // minima styles that are still around
+
+@font-face {
+    font-family: Nevis;
+    src: url(fonts/nevis.ttf);
+}
   
 a {
   color: $cerulean-blue;
