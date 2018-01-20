@@ -13,6 +13,7 @@
   color: $hint-of-red;
   margin: 25px 0 0 0;
   position: relative;
+  -webkit-appearance: none;
   i {
     color: $hint-of-red;
     position: absolute;
@@ -23,9 +24,13 @@
 }
 
 #about-select {
+  background-color: $blumine;
+  border-radius: 0px;
   font-size: 20px;
   padding: 15px;
   position: relative;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
   width: 100%;
 }
 
