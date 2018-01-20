@@ -313,14 +313,14 @@
       padding: 50px;
       margin-bottom: 50px;
       &:nth-of-type(1){
-        background: linear-gradient(405deg, $cerulean-blue 0%, $cerulean-blue 90%, transparent 90%, transparent 100%);
+        background: linear-gradient(400deg, $cerulean-blue 0%, $cerulean-blue 90%, transparent 90%, transparent 100%);
         margin-top: 50px;
       }
       &:nth-of-type(3){
-        background: linear-gradient(405deg, $blumine 0%, $blumine 90%, transparent 90%, transparent 100%);
+        background: linear-gradient(400deg, $blumine 0%, $blumine 90%, transparent 90%, transparent 100%);
       }
       &:nth-of-type(5){
-        background: linear-gradient(405deg, $chicago 0%, $chicago 90%, transparent 90%, transparent 100%);
+        background: linear-gradient(400deg, $chicago 0%, $chicago 90%, transparent 90%, transparent 100%);
       }
       &:last-of-type {
         margin-bottom: 0px;
