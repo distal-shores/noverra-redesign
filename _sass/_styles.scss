@@ -40,6 +40,10 @@ main, .container {
   background-color: $hint-of-red;
 }
 
+main {
+  padding-bottom: 50px;
+}
+
 .content-section {
   padding-top: 25px;
   text-align: center;
@@ -113,7 +117,7 @@ main, .container {
 }
 
 .photo-row {
-  margin: 25px 0;
+  margin: 25px 0 0 0;
   .img-container {
     display: flex;
     justify-content: center;
@@ -197,8 +201,12 @@ select {
     margin-bottom: 50px;
   }
 
+  main {
+    padding-bottom: 75px;
+  }
+
   .photo-row {
-    margin: 50px 0;
+    margin: 50px 0 0 0;
     .img-container {
       margin-bottom: 0;
     }

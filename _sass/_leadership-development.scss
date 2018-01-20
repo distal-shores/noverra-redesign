@@ -48,6 +48,11 @@
   h5 {
     font-size: 18px;
   }
+  .section-heading {
+    &:last-of-type {
+      padding-bottom: 0px;
+    }
+  }
 }
 
 @media (min-width: $screen-md-min) { 
