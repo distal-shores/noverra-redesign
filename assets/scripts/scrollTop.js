@@ -1,10 +1,19 @@
 $(function () {
-  var scrollTop = $(".scrollTop");
+  var $scrollTop = $(".scrollTop");
 
-  $(scrollTop).click(function () {
+  $( window ).scroll(function() {
+    if( $(document).scrollTop() > 300 ) {
+        $scrollTop.show();
+    } else {
+        $scrollTop.hide();
+    }
+  });
+
+
+  $($scrollTop).click(function () {
     $('html, body').animate({
       scrollTop: 0
-    }, 800);
+    }, 300);
     return false;
   });
 
