@@ -18,6 +18,14 @@
         {% continue %}
       {% endif %}
 
+      {% if forloop.first %}
+        <li class="breadcrumb-item" property="itemListElement" typeof="ListItem"{% if crumbitem.getUrlHash != '' %} data-hash="{{ crumbitem.getUrlHash }}"{% endif %}>
+          <a property="item" typeof="WebPage" href="/"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
+          <div class="arrow-right"></div>
+        </li>
+        {% continue %}
+      {% endif %}
+
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem"{% if crumbitem.getUrlHash != '' %} data-hash="{{ crumbitem.getUrlHash }}"{% endif %}>
       <a property="item" typeof="WebPage" href="{{ crumbitem.getUrl | prepend: site.baseurl }}#{{ crumbitem.getUrlHash }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
         <div class="arrow-right"></div>
