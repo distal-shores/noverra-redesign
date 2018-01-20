@@ -35,6 +35,8 @@ header {
     }
     &:nth-child(1) {
       background-color: $cerulean-blue;
+      font-family: Nevis;
+      font-size: 24px;
       &:hover {
         background-color: lighten($cerulean-blue, 5%);
       }
