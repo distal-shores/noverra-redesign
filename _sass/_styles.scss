@@ -150,6 +150,33 @@ main {
   }
 }
 
+.scrollTop {
+  align-items: center;
+  background: $coral-red;
+  border-radius: 50%;
+  bottom: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 9px;
+  position: absolute;
+  right: 20px;
+  transition: all 0.2s;
+  &:hover {
+    background-color: darken($coral-red, 10%);
+    transition: all 0.2s;
+  }
+  a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    i {
+      color: $hint-of-red;
+      font-size: 32px;
+    }
+  }
+}
+
 .section-heading {
   font-size: 20px;
   font-weight: bold;
@@ -215,6 +242,11 @@ select {
   .profile-image {
     height: 200px;
     width: 200px;
+  }
+
+  .scrollTop {
+    bottom: 95px;
+    padding: 12px;
   }
 
   .section-heading {
