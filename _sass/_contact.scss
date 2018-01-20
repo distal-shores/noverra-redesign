@@ -31,9 +31,6 @@
     .directions {
       margin: 15px 0 35px 0;
     }
-    label {
-      max-width: 30%;
-    }
     > .field {
       display: flex;
       justify-content: space-between;
@@ -51,6 +48,9 @@
         min-height: 130px;
       }
     }
+    label {
+      max-width: 30%;
+    }
     button {
       background-color: $hint-of-red;
       color: $cerulean-blue;
@@ -63,10 +63,35 @@
   }
 }
 
+@media (min-width: $screen-sm-min) { 
+  .contact {
+    text-align: center;
+    .contact-info {
+      margin-bottom: 75px;
+    }
+    .map {
+      max-height: none;
+      overflow: auto;
+    }
+  }
+}
+
 @media (min-width: $screen-md-min) { 
   .hero-image {
     &.contact {
       background-image: url('img/hero-images/contact-m.jpg');
+    }
+  }
+  .contact {
+    form {
+      > .field {
+        input, textarea {
+          width: 80%;
+        }
+      }
+      label {
+        max-width: 20%;
+      }
     }
   }
 }
