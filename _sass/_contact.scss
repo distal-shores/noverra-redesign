@@ -9,24 +9,23 @@
   .address {
     align-items: center;
     display: flex;
-    height: 450px;
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 0;
+    text-align: center;
     h1 {
       font-family: Nevis;
     }
-  }
-  .contact-wrapper {
-    padding: 0 0 50px 0;
   }
   .map {
     align-items: center;
     display: flex;
     justify-content: center;
-    max-height: 250px;
     overflow: hidden;
     width: 100%;
   }
   .contact-form {
-    background-color: $cerulean-blue;
+    background-color: $biscay;
     margin-bottom: -75px;
     margin-left: calc(50% - 50vw);
     padding: 0 0 50px 0;
@@ -74,8 +73,9 @@
       color: $cerulean-blue;
       border: 0;
       border-radius: 2px;
+      display: block;
       -webkit-border-radius: 2px;
-      margin: 5px 0 10px 0;
+      margin: 0 auto;
       padding: 10px 25px;
     }
   }
@@ -98,6 +98,14 @@
     }
   }
   .contact {
+    .contact-wrapper {
+      padding: 0 0 50px 0;
+    }
+    .address {
+      height: 450px;
+      justify-content: flex-start;
+      text-align: left;
+    }
     form {
       > .field {
         input, textarea {
