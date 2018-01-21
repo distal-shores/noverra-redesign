@@ -4,14 +4,18 @@ footer {
     color: $hint-of-red;
     display: flex;
     flex-direction: column;
-    height: 75px;
+    height: 150px;
+    justify-content: center;
     position: relative;
     text-align: center;
     p {
+        color: darkgrey;
         padding-top: 25px;
     }
     .footer-top {
         display: flex;
+        position: absolute;
+        top: 0;
         width: 100%;
         span {
             display: inline-block;
@@ -34,6 +38,7 @@ footer {
     .site-tag {
         position: absolute;
         bottom: 5px;
+        color: darkgrey;
         font-size: 11px;
         right: 5px;
         a {

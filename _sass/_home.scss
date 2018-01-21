@@ -30,14 +30,26 @@
 .home-description {
     background-color: $biscay; 
     color: $hint-of-red;
-    padding: 100px;
+    margin-bottom: -75px;
+    padding: 50px;
+    a {
+        color: $heather;
+        &:hover {
+            color: $hint-of-red;
+        }
+        &:visited {
+            color: $heather;
+        }
+    }
 }
 
 @media (min-width: $screen-md-min) {
     .hero-home {
         background-image: url('img/hero-images/home-m.jpg');
     }
-
+    .home-description {
+        padding: 100px;
+    }
 }
 
 @media (min-width: $screen-lg-min) {

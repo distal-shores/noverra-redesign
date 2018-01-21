@@ -5,6 +5,7 @@
 }
 
 .contact {
+  padding: 50px 0 0;
   .map {
     align-items: center;
     display: flex;
@@ -12,6 +13,11 @@
     max-height: 250px;
     overflow: hidden;
     width: 100%;
+  }
+  .contact-form {
+    margin-bottom: -75px;
+    margin-left: calc(50% - 50vw);
+    width: 100vw;
   }
   .contact-info {
     margin: 35px 0 0 0;
