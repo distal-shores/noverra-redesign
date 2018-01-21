@@ -1,6 +1,6 @@
 .hero-image {
   &.capital {
-    background-image: url('img/lights.jpg');
+    background-image: url('img/hero-images/noverra-capital-s.jpg');
   }
 }
 
@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width: $screen-sm-min) { 
+@media (min-width: $screen-sm-min) {
   .capital {
     .diagram-fork {
       display: flex;
@@ -107,6 +107,22 @@
     }
     h4 {
       font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .hero-image {
+    &.capital {
+      background-image: url('img/hero-images/noverra-capital-m.jpg');
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .hero-image {
+    &.capital {
+      background-image: url('img/hero-images/noverra-capital-l.jpg');
     }
   }
 }
