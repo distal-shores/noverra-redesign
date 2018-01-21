@@ -40,6 +40,18 @@
       
     }
 
+    var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70,
+        'side': 'right'
+    });
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+        $('.overlay').toggle();
+        slideout.toggle();
+    });
+
     function rgb2hex(rgb){
      rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
      return (rgb && rgb.length === 4) ? "#" +
@@ -48,17 +60,6 @@
       ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
     }
     $(document).ready(function() {
-        var slideout = new Slideout({
-            'panel': document.getElementById('panel'),
-            'menu': document.getElementById('menu'),
-            'padding': 256,
-            'tolerance': 70,
-            'side': 'right'
-        });
-        document.querySelector('.toggle-button').addEventListener('click', function() {
-            $('.overlay').toggle();
-            slideout.toggle();
-        });
 
         $('.mobile-sub-toggle').click(function() {
             $(this).toggleClass("deployed");
