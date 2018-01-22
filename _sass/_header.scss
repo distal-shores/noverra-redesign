@@ -72,6 +72,12 @@ header {
         cursor: pointer;
       }
     }
+    &.logo {
+      margin-left: -1px;
+    }
+    &.hamburger {
+      margin-right: -1px;
+    }
   }
   .dropdown {
     i {
@@ -199,10 +205,12 @@ header {
     &.logo {
       flex-grow: 1;
       flex-shrink: 0;
+      margin-left: 0px;
     }
     &.hamburger {
       background-color: $coral-red;
       flex: 0 0 90px;
+      margin-right: 0px;
     }
   }
 

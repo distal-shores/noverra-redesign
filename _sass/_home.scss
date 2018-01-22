@@ -7,7 +7,7 @@
     h2 {
         color: white;
         font-family: Nevis;
-        font-size: 60px;
+        font-size: 54px;
         letter-spacing: 1px;
         text-align: center;
         text-transform: uppercase;
@@ -18,7 +18,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 50px 100px; 
+        padding: 50px 0px; 
     }
     .hero-caption {
         color: white;
@@ -32,6 +32,7 @@
     color: $hint-of-red;
     margin-bottom: -75px;
     padding: 50px;
+    text-align: center;
     a {
         color: $heather;
         &:hover {
@@ -40,6 +41,17 @@
         &:visited {
             color: $heather;
         }
+    }
+}
+
+@media(min-width: $screen-sm-min) {
+    .hero-home {
+        .black-overlay {
+            padding: 50px 100px;
+        }
+    }
+    .home-description {
+        text-align: left;
     }
 }
 
