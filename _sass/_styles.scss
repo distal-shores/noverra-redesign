@@ -31,6 +31,8 @@ body {
   background-color: $hint-of-red;
   font-family: 'Noto Sans', sans-serif;
   color: $black;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .box-shadow {

@@ -62,8 +62,34 @@
     $(document).ready(function() {
 
         $('.mobile-sub-toggle').click(function() {
-            $(this).toggleClass("deployed");
-            $(this).siblings().toggleClass("visible").toggleClass("invisible");
+            // blank slate : if nothing has been clicked, add active and inactive accordingly       
+            if (!$(this).parent().hasClass('active') && !$(this).parent().hasClass('inactive')) {
+                
+                $(this).parent().siblings().toggleClass('inactive');
+                $(this).parent().toggleClass('active');
+
+                // display inner contents
+                $(this).toggleClass("deployed");
+                $(this).siblings().toggleClass("visible").toggleClass("invisible");
+            }
+            // if click is open item, revert to blank slate
+            else if ($(this).parent().hasClass('active')) {
+                $(this).parent().removeClass('active'); 
+                $(this).parent().siblings().removeClass('inactive');
+
+                // hide inner contents
+                $(this).toggleClass("deployed");
+                $(this).siblings().toggleClass("visible").toggleClass("invisible");
+            } 
+            // if click is on closed item while other item is open
+            else if ($(this).parent().hasClass('inactive')) {
+                if ($(this).parent().siblings().hasClass('active')) {
+                    $(this).toggleClass("deployed");
+                    $(this).siblings().toggleClass("visible").toggleClass("invisible");
+                }
+                $(this).parent().removeClass('inactive');
+                $(this).parent().addClass('active');
+            } 
         });
 
         $('.breadcrumb-item').hover(
