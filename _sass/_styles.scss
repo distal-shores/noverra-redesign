@@ -2,8 +2,8 @@
 // minima styles that are still around
 
 @font-face {
-    font-family: Nevis;
-    src: url(fonts/nevis.ttf);
+  font-family: Nevis;
+  src: url(fonts/nevis.ttf);
 }
   
 a {
@@ -53,7 +53,7 @@ main {
 
 .content-section {
   padding-top: 25px;
-  text-align: center;
+  text-align: left;
   ul {
     text-align: left;
   }
@@ -125,10 +125,11 @@ main {
 .photo-row {
   margin: 25px 0 0 0;
   .img-container {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 25px;
+    overflow: hidden;
     img {
       max-width: 80%;
       object-fit: cover;
