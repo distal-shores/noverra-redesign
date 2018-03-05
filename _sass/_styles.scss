@@ -5,13 +5,13 @@
   font-family: Nevis;
   src: url(fonts/nevis.ttf);
 }
-  
-a {
-  color: $cerulean-blue;
+
+@mixin link($color, $visitedColor) {
+  color: $color;
   text-decoration: none;
   transition: color 0.2s;
   &:hover {
-    color: darken($cerulean-blue, 20%);
+    color: darken($color, 20%);
     text-decoration: none;
     transition: color 0.2s;
   }
@@ -19,12 +19,20 @@ a {
     text-decoration: none;
   }
   &:visited {
-    color: $black;
+    color: $visitedColor;
     text-decoration: none;
   }
   &:active {
     text-decoration: none;
   }
+}
+  
+a {
+  @include link($cerulean-blue, $black);
+}
+
+a.link-white {
+  @include link($nav-hover, $black);
 }
 
 body {
