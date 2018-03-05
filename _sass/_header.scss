@@ -35,11 +35,11 @@ header {
       margin: 0;
     }
     &:nth-child(1) {
-      background-color: $cerulean-blue;
+      background-color: $heather;
       font-family: Nevis;
       font-size: 24px;
       &:hover {
-        background-color: lighten($cerulean-blue, 5%);
+        background-color: lighten($heather, 5%);
       }
     }
     &:nth-child(2) {
@@ -74,6 +74,9 @@ header {
     }
     &.logo {
       margin-left: -1px;
+      img {
+        height: 90%;
+      }
     }
     &.hamburger {
       margin-right: -1px;
