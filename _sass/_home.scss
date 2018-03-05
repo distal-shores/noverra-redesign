@@ -12,16 +12,17 @@
         text-align: center;
         text-transform: uppercase;
     }
-    .black-overlay {
+    .white-overlay {
         align-items: center;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(white,0.5);
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 50px 0px; 
+        max-width: 90%;
     }
     .hero-caption {
-        color: white;
+        color: $logo-grey;
         font-size: 24px;
         text-align: center;
     }
@@ -46,7 +47,7 @@
 
 @media(min-width: $screen-sm-min) {
     .hero-home {
-        .black-overlay {
+        .white-overlay {
             padding: 50px 100px;
         }
     }
@@ -70,7 +71,7 @@
         h2 {
             text-align: left;
         }
-        .black-overlay {
+        .white-overlay {
             flex-direction: row;
         }
         .hero-caption {
