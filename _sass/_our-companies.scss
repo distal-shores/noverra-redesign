@@ -10,7 +10,7 @@
     border-radius: 0;
     background-size: contain;
     height: 200px;
-    width: 300px;
+    width: 100%;
   }
   &.thorpe-design {
     background-image: url('/assets/img/thorpe.jpg');
@@ -23,6 +23,9 @@
 .companies-section {
   background-color: $heather;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: $screen-sm-min) { 
@@ -41,6 +44,7 @@
     }
   }
   .companies-section {
+    display: block;
     .profile-image {
       display: block;
       margin: 15px auto 25px auto;

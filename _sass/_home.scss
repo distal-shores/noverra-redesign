@@ -7,14 +7,14 @@
     h2 {
         color: white;
         font-family: Nevis;
-        font-size: 60px;
+        font-size: 54px;
         letter-spacing: 1px;
         text-align: center;
         text-transform: uppercase;
     }
-    .black-overlay {
+    .white-overlay {
         align-items: center;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(white,0.5);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,7 +22,7 @@
         padding: 50px 100px; 
     }
     .hero-caption {
-        color: white;
+        color: $logo-grey;
         font-size: 24px;
         text-align: center;
     }
@@ -32,7 +32,8 @@
     background-color: $biscay; 
     color: $hint-of-red;
     margin-bottom: -75px;
-    padding: 50px;
+    padding: 50px 15px;
+    text-align: left;
     a {
         color: $heather;
         &:hover {
@@ -41,6 +42,17 @@
         &:visited {
             color: $heather;
         }
+    }
+}
+
+@media(min-width: $screen-sm-min) {
+    .hero-home {
+        .white-overlay {
+            padding: 50px 100px;
+        }
+    }
+    .home-description {
+        text-align: left;
     }
 }
 
@@ -59,7 +71,7 @@
         h2 {
             text-align: left;
         }
-        .black-overlay {
+        .white-overlay {
             flex-direction: row;
         }
         .hero-caption {

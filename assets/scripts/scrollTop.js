@@ -15,13 +15,13 @@ $(function () {
     $('.dropdown i').css({'right':'initial', 'top':'initial', 'left':'0', 'bottom':'0', 'width':'100%', 'transform':'none', 'display':'inline-block'});
   }
 
-  $( window ).scroll(function() {
-    if( $(document).scrollTop() > 300 ) {
-        $scrollTop.show();
-        foldNav();
-    } else {
-        unfoldNav();
-        $scrollTop.hide();
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 300) {
+      $scrollTop.show();
+      foldNav();
+    } else if ($(document).scrollTop() < 200) {
+      unfoldNav();
+      $scrollTop.hide();
     }
   });
 
@@ -32,5 +32,4 @@ $(function () {
     }, 300);
     return false;
   });
-
 });
