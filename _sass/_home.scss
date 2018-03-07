@@ -1,6 +1,6 @@
 .hero-home {
     align-items: center;
-    background-image: url('img/hero-images/home-s.jpg');
+    background-image: url('img/hero-images/home2-s.jpg');
     display: flex;
     height: 90vh;
     justify-content: center;
@@ -58,7 +58,7 @@
 
 @media (min-width: $screen-md-min) {
     .hero-home {
-        background-image: url('img/hero-images/home-m.jpg');
+        background-image: url('img/hero-images/home2-m.jpg');
     }
     .home-description {
         padding: 100px;
@@ -67,7 +67,7 @@
 
 @media (min-width: $screen-lg-min) {
     .hero-home {
-        background-image: url('img/hero-images/home-l.jpg');
+        background-image: url('img/hero-images/home2-m.jpg');
         h2 {
             text-align: left;
         }
