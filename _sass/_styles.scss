@@ -32,7 +32,7 @@ a {
 }
 
 a.link-white {
-  @include link($nav-hover, $black);
+  @include link($nav-hover, white);
 }
 
 body {
@@ -167,13 +167,13 @@ main {
   display: block;
   text-align: center;
   &:hover {
-    color: $coral-red;
+    color: $danube;
     text-decoration: none;
   }
 }
 
 .scrollTop {
-  background: $coral-red;
+  background: $danube;
   border-radius: 50%;
   bottom: 25px;
   cursor: pointer;
@@ -184,7 +184,7 @@ main {
   transition: all 0.2s;
   z-index: 10000;
   &:hover {
-    background-color: darken($coral-red, 10%);
+    background-color: darken($danube, 10%);
     transition: all 0.2s;
   }
   a {

@@ -55,9 +55,9 @@ header {
       }
     }
     &:nth-child(4) {
-      background-color: $coral-red;
+      background-color: $danube;
       &:hover {
-        background-color: lighten($coral-red, 5%);
+        background-color: lighten($danube, 5%);
       }
     }
     &:nth-child(5) {
@@ -211,7 +211,7 @@ header {
       margin-left: 0px;
     }
     &.hamburger {
-      background-color: $coral-red;
+      background-color: $danube;
       flex: 0 0 90px;
       margin-right: 0px;
     }
