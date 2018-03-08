@@ -21,7 +21,7 @@
 }
 
 .companies-section {
-  background-color: $heather;
+  background-color: white;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@
     .tab {
       padding: 25px 0;
       &.active {
-        background-color: $heather;
+        background-color: white;
         &:hover {
           background-color: darken($heather, 10%);
         }
