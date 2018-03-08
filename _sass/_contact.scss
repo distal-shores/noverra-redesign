@@ -1,6 +1,6 @@
 .hero-image {
   &.contact {
-    background-image: url('img/hero-images/contact-s.jpg');
+    background-image: url('img/hero-images/contact2-s.jpg');
   }
 }
 
@@ -94,7 +94,7 @@
 @media (min-width: $screen-md-min) { 
   .hero-image {
     &.contact {
-      background-image: url('img/hero-images/contact-m.jpg');
+      background-image: url('img/hero-images/contact2-m.jpg');
     }
   }
   .contact {
@@ -115,13 +115,6 @@
       label {
         max-width: 20%;
       }
-    }
-  }
-}
-@media (min-width: $screen-lg-min) {
-  .hero-image {
-    &.contact {
-      background-image: url('img/hero-images/contact-l.jpg');
     }
   }
 }

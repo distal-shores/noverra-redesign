@@ -181,7 +181,6 @@
         }
       }
       &:nth-of-type(1){
-        margin-bottom: 150px;
         .section-heading  {          
           text-align: left;
         }
@@ -209,7 +208,6 @@
         }
       }
       &:nth-of-type(2){
-        margin-bottom: 200px;
         .section-heading {
           text-align: right;
         }
@@ -237,7 +235,6 @@
         }
       }
       &:nth-of-type(3){
-        margin-bottom: 160px;
         .section-heading {
           text-align: left;
         }
@@ -337,9 +334,6 @@
   }
   .what-we-do {
     .service {
-      &:nth-of-type(1){
-        margin-bottom: 200px;
-      }
       &:nth-of-type(2){
         .images-container {
           div {
@@ -391,13 +385,6 @@
   .hero-image {
     &.about {
       background-image: url('img/hero-images/about-l.jpg');
-    }
-  }
-  .what-we-do {
-    .service {
-      &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3) {
-        margin-bottom: 250px;
-      }
     }
   }
   .where-we-started {
